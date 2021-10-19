@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Create form</h1>
+<mat-dialog-content>
+  <button (click)="onNoClick()">close</button>
+  <div>
+    <label>Summary</label>
+    <input type="text" />
+  </div>
+  <div>
+    <label>Form headline</label>
+    <input type="text" />
+  </div>
+
+  <div>
+    <label>Form items</label>
+    <button (click)="onAnotherModalOpen()">edit</button>
+  </div>
+
+  <a>Add a new form item</a>
+</mat-dialog-content>

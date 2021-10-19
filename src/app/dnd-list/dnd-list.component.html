@@ -1,0 +1,11 @@
+<div>
+  <ul
+    cdkDropList
+    #todoList="cdkDropList"
+    [cdkDropListData]="todo"
+    class="todo-list"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <li *ngFor="let item of todo" cdkDrag>{{ item }}</li>
+  </ul>
+</div>
