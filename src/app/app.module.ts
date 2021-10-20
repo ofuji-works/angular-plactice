@@ -14,6 +14,7 @@ import { AnotherModalComponent } from './another-modal/another-modal.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DndListComponent } from './dnd-list/dnd-list.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     FormModalComponent,
     AnotherModalComponent,
     DndListComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatDialogModule,
     DragDropModule,
     AppRoutingModule,
+    // RouterModuleをエクスポートしたAppRoutingModuleをAppModuleがインポートしているので、 このRouterOutletは、このAppComponentで利用できるようになったルーターのディレクティブのひとつです
   ],
   providers: [],
   bootstrap: [AppComponent],
